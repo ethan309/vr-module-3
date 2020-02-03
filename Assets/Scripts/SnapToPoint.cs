@@ -21,6 +21,10 @@ namespace Valve.VR.InteractionSystem.Sample
         public void ToggleReset(bool status)
         {
             shouldReset = status;
+            if(status)
+            {
+                transform.gameObject.SetActive(true);
+            }
         }
 
         private void Start()
@@ -45,7 +49,7 @@ namespace Valve.VR.InteractionSystem.Sample
                 body.angularVelocity = Vector3.zero;
                 body.isKinematic = false;
                 dropTimer = -1;
-                shouldReset = false;
+                ToggleReset(false);
             }
             else if (shouldReset)
             {
@@ -59,7 +63,7 @@ namespace Valve.VR.InteractionSystem.Sample
                     //transform.parent = snapTo;
                     transform.position = snapTo;
                     transform.rotation = snapAngle;
-                    shouldReset = false;
+                    ToggleReset(false);
                     dropTimer = -1;
                 }
                 // Still returning to target position

@@ -1,7 +1,10 @@
 ﻿<Properties StartupConfiguration="{36212AE9-423F-841D-9827-7389369EA947}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MarbleController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SnapToPoint.cs">
     <Files>
-      <File FileName="Assets/Scripts/MarbleController.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/StandingMarbleController.cs" Line="16" Column="33" />
+      <File FileName="Assets/Scripts/ResetPins.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Resetable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SnapToPoint.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +12,7 @@
           <Node name="VR Module 3.0" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MarbleController.cs" selected="True" />
+                <Node name="SnapToPoint.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -19,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="10883175-9ac1-4ffc-abe9-7208cc1b5788" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e009bb2d-7039-41d2-82cb-5ce6d2a244d2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

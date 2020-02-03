@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ball
   - Standing Marble
+  - Ring
+  - Centerpoint
   layers:
   - Default
   - TransparentFX
