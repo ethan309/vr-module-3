@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2723693977934273605}
   m_Layer: 0
   m_Name: Standing Marble
-  m_TagString: Ball
+  m_TagString: Standing Marble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,6 +60,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

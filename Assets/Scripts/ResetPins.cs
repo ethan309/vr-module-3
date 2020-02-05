@@ -17,7 +17,7 @@ public class ResetPins : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        pins = GameObject.FindGameObjectsWithTag("Pin");
+        pins = GameObject.FindGameObjectsWithTag("Standing Marble");
         endgameMessage.text = "";
     }
 
@@ -27,7 +27,7 @@ public class ResetPins : MonoBehaviour
         scoreDisplayText.text = "Score: " + score.ToString();
         if (score >= winningScore)
         {
-            endgameMessage.text = "Please Reset Pins";
+            endgameMessage.text = "Please Reset Marbles";
         }
         else
         {

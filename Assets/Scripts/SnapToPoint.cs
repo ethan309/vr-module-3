@@ -16,7 +16,7 @@ namespace Valve.VR.InteractionSystem.Sample
         private float dropTimer;
         private Interactable interactable;
 
-        bool Resetable.hit => false;
+        bool Resetable.hit => transform.gameObject.activeSelf;
 
         public void ToggleReset(bool status)
         {
