@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ResetPins : MonoBehaviour
 {
-    private GameObject[] pins;
+    private GameObject[] marbles;
 
     public int winningScore;
     public int score;
@@ -17,7 +17,7 @@ public class ResetPins : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        pins = GameObject.FindGameObjectsWithTag("Standing Marble");
+        marbles = GameObject.FindGameObjectsWithTag("Standing Marble");
         endgameMessage.text = "";
     }
 
@@ -38,9 +38,9 @@ public class ResetPins : MonoBehaviour
     private void FixedUpdate()
     {
         int newScore = 0;
-        foreach (GameObject pin in pins)
+        foreach (GameObject marble in marbles)
         {
-            if (pin.GetComponent<Resetable>().hit)
+            if (marble.GetComponent<Resetable>().hit)
             {
                 newScore += 1;
             }
@@ -54,9 +54,9 @@ public class ResetPins : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             score = 0;
-            foreach (GameObject pin in pins)
+            foreach (GameObject marble in marbles)
             {
-                pin.GetComponent<Resetable>().ToggleReset(true);
+                marble.GetComponent<Resetable>().ToggleReset(true);
             }
         }
     }
